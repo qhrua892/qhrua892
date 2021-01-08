@@ -1,0 +1,2 @@
+import asyncio==0.16.12
+import discord==0.16.12
