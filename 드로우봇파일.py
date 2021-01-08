@@ -1,4 +1,5 @@
 import asyncio
+import os
 import discord
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
@@ -6,7 +7,8 @@ from urllib import parse
 client = discord.Client()
 
 # 디스코드에서 생성된 토큰을 여기에 추가
-token = "Nzk3MDM1NzMwOTE1Njg4NDQ4.X_gnXg.yHUDjX08xc-mV1ohuTAtgjg6dyA"
+access_token = os.environ["BOT_TOKEN"]
+token = (access_token)
 
 # 아래는 봇이 구동되었을 때 동작하는 부분
 @client.event
